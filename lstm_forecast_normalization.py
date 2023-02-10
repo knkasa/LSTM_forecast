@@ -1,6 +1,5 @@
 # LSTM paper 
 # https://marketpsych-website.s3.amazonaws.com/web3/files/papers/Forecasting%20the%20USD-JPY%20Rate%20with%20Sentiment.pdf
-# Note: USDJPY from yahoo finance has bug value.  Uncomment price_df.loc['2007-11-19', 'High'] = 111
 
 import sys
 import datetime as dt
@@ -16,10 +15,6 @@ import yfinance as yf
 import sqlalchemy as sa
 import shap
 import pandas_ta as ta
-
-#from tf.keras.layers import Dense, Activation, LSTM, Dropout
-#from tf.keras.models import Sequential, load_model
-#from tf.keras.callbacks import EarlyStopping, ModelCheckpoint
 from sklearn.model_selection import KFold
 
 from dataclasses import dataclass
@@ -53,28 +48,6 @@ features =   [    'Vol',   "sentiment",  "rma1_diff",   ]      # Add _x _y if se
 rename_features = [   'Vol',  "sentiment_US",    "macd_diff_US",        ]   # "sentiment_GB",  "sentiment_JP",    "macd_diff_GB",   "macd_diff_JP",    
 
 #-----------------------------------------------------------------------------
-
-'''
-# Another way to download news data.
-asset_class = "cur"
-frequency   = "01m"
-assets      = "USD"
-# we use 00:01 to start at `00:01` and end at `00:00`
-start       = "2022-01-01T00:01"
-end         = "2022-01-02T00:01"
-
-# call API and load data into pandas dataframe
-url = f"https://dataapi.marketpsych.com/rma/v4/data/{asset_class}/{frequency}/{assets}?apikey={APIKEY}&start_date={start}&end_date={end}&format=csv"
-rma_df = pd.read_csv(url, parse_dates=['windowTimestamp']).drop(columns=["id", 'systemVersion'])
-rma_df
-'''
-
-# Get news from maimate db.
-start_news  = "2022-6-01"
-mysql_engine = sa.create_engine('postgresql+psycopg2://inv-ai-news-ro-stg:dXZ5cgB9@mm-ai-db-ro.mm-stg.invastsec.com/news_db')     # news stg 2.0 
-sql_string = " select  *  from currency_news where utc_datetime>='" + start_news + "' and datatype='News_Social' and assetcode='JPY'  order by utc_datetime "
-#rma = pd.read_sql_query(  sql_string , mysql_engine)
-#rma.to_csv('C:/my_working_env/general_folder/Refinitiv/rma.csv', index=None)
 
 # Retrieves weekly price data from yfinance
 price_df = yf.download( cur + "=X", interval=price_freq, start="1997-12-29", end="2022-02-27", progress=False)
