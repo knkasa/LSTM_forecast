@@ -4,9 +4,3 @@ https://marketpsych-website.s3.amazonaws.com/web3/files/papers/Forecasting%20the
 
 * Performace check.  Buy position if the model predicts increase in price, and sell if the prediction price drops.
 ![image1](https://github.com/knkasa/lstm_forecast/blob/main/performance_test.png)
-
-* Variable importance using SHAPLEY.
-![image2](https://github.com/knkasa/lstm_forecast/blob/main/sharply_data.png)
-
-* USDJPY vs. News index
-![image3](https://github.com/knkasa/lstm_forecast/blob/main/priceForecast.png)
