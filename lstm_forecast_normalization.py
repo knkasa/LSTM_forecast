@@ -169,7 +169,7 @@ elif normalization == "maxmin":
     elif cur == "EURUSD:
         max0 = 1.2; min0 = 1.0
     rate_col_name = "rate_maxmin"
-    price_df[rate_col_name] = (price_df.Open - 100)/(150-100)   # max-min normzalization (price-min)/(max-min)
+    price_df[rate_col_name] = (price_df.Open - min0)/(max0-min0)   # max-min normzalization (price-min)/(max-min)
     price_df['Fw_' + rate_col_name] = price_df.rate_maxmin.shift(-1)
 
 price_df.to_csv('./price_df.csv')
