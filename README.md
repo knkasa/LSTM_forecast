@@ -6,7 +6,7 @@ https://marketpsych-website.s3.amazonaws.com/web3/files/papers/Forecasting%20the
 
 ![image1](https://github.com/knkasa/lstm_forecast/blob/main/performance_test.png)
 
-* USDJPY rate and priceDirection indices.
+* USDJPY rate and Price prediction from news (priceDirection indices).
 ![image2](https://github.com/knkasa/LSTM_forecast/blob/main/USDJPY%20priceDirection(JPY).png)
 
 * Variable importance using shrply.
