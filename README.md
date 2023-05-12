@@ -5,5 +5,8 @@ https://marketpsych-website.s3.amazonaws.com/web3/files/papers/Forecasting%20the
 * Earned pips from the above model.  Buy position if the model predicts increase in price, and sell if the prediction price drops.
 ![image1](https://github.com/knkasa/lstm_forecast/blob/main/performance_test.png)
 
+- USDJPY rate and priceDirection indices.
+![image2](https://github.com/knkasa/LSTM_forecast/blob/main/USDJPY%20priceDirection(JPY).png)
+
 - Variable importance using shrply.
-![image2](https://github.com/knkasa/LSTM_forecast/blob/main/sharply_data.png)
+![image3](https://github.com/knkasa/LSTM_forecast/blob/main/Variable%20importance2.png)
