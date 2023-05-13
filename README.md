@@ -6,10 +6,10 @@ https://marketpsych-website.s3.amazonaws.com/web3/files/papers/Forecasting%20the
 
 ![image1](https://github.com/knkasa/LSTM_forecast/blob/main/USDJPY%20priceDirection(JPY).png)
 
-* Earned profit(pips) based on the forward test using the above model.  Buy position if the model predicts increase in price, and sell if the prediction price drops.
+* Earned profit(pips) based on the forward test using the above model.  Buy position if the model predicts increase in price, and sell if the prediction price drops.  (Note: the actuall pips is 100 times that of the value in the graph.  So, roughly ~2600 pips is earned between the year 2019~2022)
 
 ![image2](https://github.com/knkasa/LSTM_forecast/blob/main/Earned%20profit%20from%20forward%20test.png)
 
-* Variable importance using shrply.
+* Feature importance using sarpley.
 
 ![image3](https://github.com/knkasa/LSTM_forecast/blob/main/Variable%20importance2.png)
