@@ -4,11 +4,11 @@ https://marketpsych-website.s3.amazonaws.com/web3/files/papers/Forecasting%20the
 
 * USDJPY rate and Price prediction from news (-1.0*rma).
 
-![image2](https://github.com/knkasa/LSTM_forecast/blob/main/USDJPY%20priceDirection(JPY).png)
+![image1](https://github.com/knkasa/LSTM_forecast/blob/main/USDJPY%20priceDirection(JPY).png)
 
 * Earned pips from the above model.  Buy position if the model predicts increase in price, and sell if the prediction price drops.
 
-![image1](https://github.com/knkasa/LSTM_forecast/blob/main/Earned%20profit%20from%20prediction.png)
+![image2](https://github.com/knkasa/LSTM_forecast/blob/main/Earned%20profit%20from%20forward%20test.png)
 
 * Variable importance using shrply.
 * 
