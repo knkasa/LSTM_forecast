@@ -6,7 +6,7 @@ https://marketpsych-website.s3.amazonaws.com/web3/files/papers/Forecasting%20the
 
 ![image1](https://github.com/knkasa/LSTM_forecast/blob/main/USDJPY%20priceDirection(JPY).png)
 
-* Earned pips from the above model.  Buy position if the model predicts increase in price, and sell if the prediction price drops.
+* Earned profit(pips) based on the forward test using the above model.  Buy position if the model predicts increase in price, and sell if the prediction price drops.
 
 ![image2](https://github.com/knkasa/LSTM_forecast/blob/main/Earned%20profit%20from%20forward%20test.png)
 
