@@ -10,6 +10,6 @@ https://marketpsych-website.s3.amazonaws.com/web3/files/papers/Forecasting%20the
 
 ![image2](https://github.com/knkasa/LSTM_forecast/blob/main/Earned%20profit%20from%20forward%20test.png)
 
-* Feature importance using sarpley. (rate_maxmin=MaxMin standardized USDJPY rate.  pricePrediction=News prediction.  macd_diff=MACD of pricePrediction.  US,JP=USA and Japan)
+* Feature importance using sarpley. (rate_maxmin=MaxMin standardized USDJPY rate.  pricePrediction=News prediction.  macd_diff=MACD of pricePrediction.  US,JP=USA and Japan. Vol=Volatility)
 
 ![image3](https://github.com/knkasa/LSTM_forecast/blob/main/Variable%20importance2.png)
