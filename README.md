@@ -5,6 +5,7 @@ https://marketpsych-website.s3.amazonaws.com/web3/files/papers/Forecasting%20the
 ### Code in Jupyter notebook.
 https://github.com/knkasa/LSTM_forecast/blob/main/LSTM_note_shap.ipynb
 
+
 * USDJPY rate and Price prediction from news (-1.0*rma).
 
 ![image1](https://github.com/knkasa/LSTM_forecast/blob/main/USDJPY%20priceDirection(JPY).png)
