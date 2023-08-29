@@ -2,7 +2,7 @@
 A model that predicts FX rate using News indices.  Note: You'll need to download news data before running it.  
 https://marketpsych-website.s3.amazonaws.com/web3/files/papers/Forecasting%20the%20USD-JPY%20Rate%20with%20Sentiment.pdf
 
-* Code in Jupyter notebook.
+Code in Jupyter notebook.
 https://github.com/knkasa/LSTM_forecast/blob/main/LSTM_note_shap.ipynb
 
 
